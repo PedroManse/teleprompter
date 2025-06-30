@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timed Teleprompter</title>
+  <link rel="stylesheet" href="./teleprompt.css"></link>
+  <script src="./teleprompt.js"> </script>
+</head>
+<body>
+
+  <h1>Timed Teleprompter</h1>
+
+  <div id="controls">
+    <input type="number" id="duration" placeholder="Duration (seconds)">
+    <textarea id="scriptInput" placeholder="Enter your script here..."></textarea>
+
+    <label style="color: white;">
+      Font Size: <span id="fontSizeValue">24</span>px
+      <input type="range" id="fontSizeSlider" min="16" max="200" value="24">
+    </label>
+
+    <button id="btn-start" onclick="startTeleprompter()">Start Teleprompter</button>
+  </div>
+
+  <div id="prompter"> <div id="content"></div> </div>
+
+</body>
+</html>
